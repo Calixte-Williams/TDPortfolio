@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    background-color: #000000;
+    color: #F5F5DC;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #000000;
+    color: #F5F5DC;
+    font-family: "Plus Jakarta Sans", "Avenir Next", "Helvetica Neue", sans-serif;
+  }
+}
+
+/* Subtle film grain & atmospheric texture */
+.film-grain {
+  background-image: radial-gradient(rgba(255, 215, 0, 0.06) 1px, transparent 0),
+    radial-gradient(rgba(245, 245, 220, 0.04) 1px, transparent 0);
+  background-size: 36px 36px;
+  background-position: 0 0, 18px 18px;
+}
+
+.diamond-lattice {
+  background-image: linear-gradient(
+      45deg,
+      rgba(245, 245, 220, 0.025) 25%,
+      transparent 25%,
+      transparent 75%,
+      rgba(245, 245, 220, 0.025) 75%,
+      rgba(245, 245, 220, 0.025)
+    ),
+    linear-gradient(
+      -45deg,
+      rgba(255, 215, 0, 0.02) 25%,
+      transparent 25%,
+      transparent 75%,
+      rgba(255, 215, 0, 0.02) 75%,
+      rgba(255, 215, 0, 0.02)
+    );
+  background-size: 56px 56px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: #1A2020;
+  border: 1px solid rgba(255, 215, 0, 0.35);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0B3D30;
+}

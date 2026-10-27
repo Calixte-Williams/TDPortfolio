@@ -1,0 +1,352 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="2720" viewBox="0 0 1440 2720">
+  <defs>
+    <radialGradient id="heroGlow" cx="50%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#0B3D30" stop-opacity="0.95"/>
+      <stop offset="58%" stop-color="#06251F" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#020806" stop-opacity="1"/>
+    </radialGradient>
+    <radialGradient id="goldBloom" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#FFD700" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="echoImg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E8D67A"/>
+      <stop offset="28%" stop-color="#3B341C"/>
+      <stop offset="68%" stop-color="#111816"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </linearGradient>
+    <linearGradient id="shadowImg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D8C77A"/>
+      <stop offset="38%" stop-color="#415044"/>
+      <stop offset="100%" stop-color="#020403"/>
+    </linearGradient>
+    <linearGradient id="pathImg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F1E8B0"/>
+      <stop offset="42%" stop-color="#5E6248"/>
+      <stop offset="100%" stop-color="#050705"/>
+    </linearGradient>
+    <linearGradient id="darkCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#16211D"/>
+      <stop offset="100%" stop-color="#070B09"/>
+    </linearGradient>
+    <pattern id="argyle" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M24 3 L45 24 L24 45 L3 24 Z" fill="none" stroke="#F5F5DC" stroke-opacity="0.035"/>
+      <path d="M24 12 L36 24 L24 36 L12 24 Z" fill="none" stroke="#FFD700" stroke-opacity="0.025"/>
+    </pattern>
+    <pattern id="grain" width="96" height="96" patternUnits="userSpaceOnUse">
+      <circle cx="8" cy="11" r="0.8" fill="#F5F5DC" opacity="0.10"/>
+      <circle cx="34" cy="21" r="0.55" fill="#FFD700" opacity="0.08"/>
+      <circle cx="71" cy="16" r="0.7" fill="#F5F5DC" opacity="0.07"/>
+      <circle cx="18" cy="48" r="0.5" fill="#F5F5DC" opacity="0.08"/>
+      <circle cx="52" cy="62" r="0.8" fill="#FFD700" opacity="0.06"/>
+      <circle cx="82" cy="78" r="0.65" fill="#F5F5DC" opacity="0.09"/>
+      <circle cx="29" cy="84" r="0.45" fill="#F5F5DC" opacity="0.07"/>
+    </pattern>
+    <filter id="cardShadow" x="-35%" y="-35%" width="170%" height="170%">
+      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#000000" flood-opacity="0.48"/>
+    </filter>
+    <symbol id="star" viewBox="0 0 24 24">
+      <path d="M12 2.2l2.95 6.15 6.75.82-4.98 4.65 1.32 6.68L12 17.15l-6.04 3.35 1.32-6.68-4.98-4.65 6.75-.82L12 2.2z"/>
+    </symbol>
+    <clipPath id="clipEcho"><polygon points="685,270 747.5,160 872.5,160 935,270 872.5,380 747.5,380"/></clipPath>
+    <clipPath id="clipShadows"><polygon points="1015,470 1077.5,360 1202.5,360 1265,470 1202.5,580 1077.5,580"/></clipPath>
+    <clipPath id="clipPath"><polygon points="525,690 587.5,580 712.5,580 775,690 712.5,800 587.5,800"/></clipPath>
+    <style>
+      .sans { font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif; }
+      .display { font-family: Didot, "Bodoni 72", "Times New Roman", serif; }
+      .label { font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif; font-size: 12px; letter-spacing: 3.2px; font-weight: 700; }
+      .body { font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif; font-size: 18px; line-height: 1.5; }
+      .small { font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif; font-size: 14px; letter-spacing: .4px; }
+      .hexlabel { font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif; font-size: 12.5px; letter-spacing: 0.8px; font-weight: 800; }
+      .hextiny { font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif; font-size: 9px; letter-spacing: 0.8px; font-weight: 800; }
+    </style>
+  </defs>
+
+  <rect width="1440" height="2720" fill="#000000"/>
+  <rect x="0" y="0" width="1440" height="940" fill="url(#heroGlow)"/>
+  <rect x="0" y="0" width="1440" height="940" fill="url(#argyle)"/>
+  <ellipse cx="990" cy="385" rx="430" ry="330" fill="url(#goldBloom)" opacity="0.42"/>
+  <rect width="1440" height="2720" fill="url(#grain)" opacity="0.28"/>
+
+  <!-- Minimal reference-style navigation -->
+  <rect x="0" y="0" width="1440" height="64" fill="#071512" fill-opacity="0.88"/>
+  <g transform="translate(72 19)">
+    <rect x="0" y="8" width="42" height="24" rx="3" fill="#0B3D30" stroke="#FFD700" stroke-width="1.8"/>
+    <path d="M1 8 L42 8 L38 0 L5 0 Z" fill="#1A2020" stroke="#FFD700" stroke-width="1.6"/>
+    <path d="M9 0l5 8M20 0l5 8M31 0l5 8" stroke="#FFD700" stroke-width="1.4"/>
+  </g>
+  <text x="560" y="40" class="small" fill="#F5F5DC" opacity="0.86" letter-spacing="2">ABOUT</text>
+  <text x="666" y="40" class="small" fill="#F5F5DC" opacity="0.86" letter-spacing="2">PROJECTS</text>
+  <text x="812" y="40" class="small" fill="#F5F5DC" opacity="0.86" letter-spacing="2">CONTACT</text>
+
+  <!-- Hero title -->
+  <text x="92" y="456" class="display" fill="#FFD700" font-size="82">Terrel Deligny</text>
+  <text x="96" y="514" class="sans" fill="#F5F5DC" font-size="23" font-weight="600" letter-spacing="5">DIRECTOR  |  CINEMATOGRAPHER</text>
+  <line x1="96" y1="552" x2="430" y2="552" stroke="#FFD700" stroke-opacity="0.55" stroke-width="2"/>
+  <text x="96" y="852" class="label" fill="#F5F5DC" opacity="0.48">SCROLL / SELECTED WORK</text>
+  <path d="M96 872 L126 872" stroke="#FFD700" stroke-width="2"/>
+
+  <!-- Hexagonal floating grid -->
+  <g filter="url(#cardShadow)">
+    <polygon points="685,128 712.5,80 767.5,80 795,128 767.5,176 712.5,176" fill="#101815" stroke="#F5F5DC" stroke-width="4"/>
+  </g>
+
+  <g filter="url(#cardShadow)">
+    <polygon points="456,205 470.5,179 499.5,179 514,205 499.5,231 470.5,231" fill="url(#darkCard)" stroke="#F5F5DC" stroke-width="3"/>
+    <text x="485" y="200" text-anchor="middle" class="hextiny" fill="#F5F5DC">DOC |</text>
+    <text x="485" y="216" text-anchor="middle" class="hextiny" fill="#F5F5DC">2023</text>
+  </g>
+
+  <g filter="url(#cardShadow)">
+    <polygon points="530,228 560,176 620,176 650,228 620,280 560,280" fill="url(#darkCard)" stroke="#F5F5DC" stroke-width="4"/>
+    <text x="590" y="222" text-anchor="middle" class="hexlabel" fill="#F5F5DC">BIO &amp;</text>
+    <text x="590" y="244" text-anchor="middle" class="hexlabel" fill="#F5F5DC">PHILOSOPHY</text>
+  </g>
+
+  <g filter="url(#cardShadow)">
+    <g clip-path="url(#clipEcho)">
+      <rect x="685" y="160" width="250" height="220" fill="url(#echoImg)"/>
+      <path d="M806 184c35 0 60 25 60 57 0 22-10 40-29 50l43 89H744l39-88c-22-9-37-28-37-52 0-31 26-56 60-56z" fill="#050807"/>
+      <path d="M846 205c18 12 28 31 28 52" fill="none" stroke="#FFD700" stroke-opacity="0.55" stroke-width="4"/>
+      <circle cx="815" cy="252" r="7" fill="#FFD700" opacity="0.75"/>
+      <rect x="685" y="330" width="250" height="50" fill="#000000" opacity="0.45"/>
+    </g>
+    <polygon points="685,270 747.5,160 872.5,160 935,270 872.5,380 747.5,380" fill="none" stroke="#FFD700" stroke-width="6"/>
+    <text x="810" y="360" text-anchor="middle" class="sans" fill="#F5F5DC" font-size="19" font-weight="800">ECHOES OF SILENCE</text>
+  </g>
+
+  <g filter="url(#cardShadow)">
+    <polygon points="1058,256 1072.5,230 1101.5,230 1116,256 1101.5,282 1072.5,282" fill="url(#darkCard)" stroke="#F5F5DC" stroke-width="3"/>
+    <path d="M1080 246c8 10 8 22 0 32M1094 246c-8 10-8 22 0 32" stroke="#F5F5DC" stroke-opacity="0.7" fill="none"/>
+    <text x="1087" y="261" text-anchor="middle" class="hextiny" fill="#F5F5DC">BAFTA</text>
+  </g>
+
+  <g filter="url(#cardShadow)">
+    <polygon points="996,336 1026,284 1086,284 1116,336 1086,388 1026,388" fill="url(#darkCard)" stroke="#F5F5DC" stroke-width="4"/>
+    <text x="1056" y="330" text-anchor="middle" class="hexlabel" fill="#F5F5DC">AWARDS &amp;</text>
+    <text x="1056" y="352" text-anchor="middle" class="hexlabel" fill="#F5F5DC">ACCLAIM</text>
+  </g>
+
+  <g filter="url(#cardShadow)">
+    <g clip-path="url(#clipShadows)">
+      <rect x="1015" y="360" width="250" height="220" fill="url(#shadowImg)"/>
+      <path d="M1048 360 L1118 470 L1048 580 L1015 580 L1015 360 Z" fill="#020403" opacity="0.55"/>
+      <path d="M1232 360 L1162 470 L1232 580 L1265 580 L1265 360 Z" fill="#020403" opacity="0.55"/>
+      <path d="M1118 360 L1162 360 L1200 580 L1080 580 Z" fill="#F5F5DC" opacity="0.10"/>
+      <path d="M1138 432c20 0 34 15 34 35 0 14-7 25-18 31l24 52h-82l22-52c-11-6-18-17-18-31 0-20 18-35 38-35z" fill="#050807"/>
+      <rect x="1015" y="530" width="250" height="50" fill="#000000" opacity="0.42"/>
+    </g>
+    <polygon points="1015,470 1077.5,360 1202.5,360 1265,470 1202.5,580 1077.5,580" fill="none" stroke="#FFD700" stroke-width="6"/>
+    <text x="1140" y="560" text-anchor="middle" class="sans" fill="#F5F5DC" font-size="19" font-weight="800">CHASING SHADOWS</text>
+  </g>
+
+  <g filter="url(#cardShadow)">
+    <polygon points="676,482 690.5,456 719.5,456 734,482 719.5,508 690.5,508" fill="url(#darkCard)" stroke="#F5F5DC" stroke-width="3"/>
+    <path d="M698 472c8 10 8 22 0 32M712 472c-8 10-8 22 0 32" stroke="#F5F5DC" stroke-opacity="0.7" fill="none"/>
+    <text x="705" y="487" text-anchor="middle" class="hextiny" fill="#F5F5DC">BAFTA</text>
+  </g>
+
+  <g filter="url(#cardShadow)">
+    <polygon points="685,545 715,493 775,493 805,545 775,597 715,597" fill="url(#darkCard)" stroke="#F5F5DC" stroke-width="4"/>
+    <text x="745" y="539" text-anchor="middle" class="hexlabel" fill="#F5F5DC">AWARDS &amp;</text>
+    <text x="745" y="561" text-anchor="middle" class="hexlabel" fill="#F5F5DC">ACCLAIM</text>
+  </g>
+
+  <g filter="url(#cardShadow)">
+    <polygon points="448,592 462.5,566 491.5,566 506,592 491.5,618 462.5,618" fill="url(#darkCard)" stroke="#F5F5DC" stroke-width="3"/>
+    <text x="477" y="587" text-anchor="middle" class="hextiny" fill="#F5F5DC">DOC |</text>
+    <text x="477" y="603" text-anchor="middle" class="hextiny" fill="#F5F5DC">2023</text>
+  </g>
+
+  <g filter="url(#cardShadow)">
+    <polygon points="372,672 402,620 462,620 492,672 462,724 402,724" fill="url(#darkCard)" stroke="#F5F5DC" stroke-width="4"/>
+    <text x="432" y="666" text-anchor="middle" class="hexlabel" fill="#F5F5DC">BIO &amp;</text>
+    <text x="432" y="688" text-anchor="middle" class="hexlabel" fill="#F5F5DC">PHILOSOPHY</text>
+  </g>
+
+  <g filter="url(#cardShadow)">
+    <polygon points="292,752 306.5,726 335.5,726 350,752 335.5,778 306.5,778" fill="url(#darkCard)" stroke="#F5F5DC" stroke-width="3"/>
+    <text x="321" y="747" text-anchor="middle" class="hextiny" fill="#F5F5DC">DOC |</text>
+    <text x="321" y="763" text-anchor="middle" class="hextiny" fill="#F5F5DC">2023</text>
+  </g>
+
+  <g filter="url(#cardShadow)">
+    <g clip-path="url(#clipPath)">
+      <rect x="525" y="580" width="250" height="220" fill="url(#pathImg)"/>
+      <path d="M620 580 L680 580 L742 800 L558 800 Z" fill="#F5F5DC" opacity="0.18"/>
+      <path d="M525 580 C580 640 596 710 570 800 L525 800 Z" fill="#020403" opacity="0.52"/>
+      <path d="M775 580 C720 640 704 710 730 800 L775 800 Z" fill="#020403" opacity="0.52"/>
+      <path d="M642 636c19 0 32 14 32 33 0 13-6 24-17 30l22 49h-76l21-49c-11-6-17-17-17-30 0-19 16-33 35-33z" fill="#050807"/>
+      <rect x="525" y="748" width="250" height="52" fill="#000000" opacity="0.40"/>
+    </g>
+    <polygon points="525,690 587.5,580 712.5,580 775,690 712.5,800 587.5,800" fill="none" stroke="#FFD700" stroke-width="6"/>
+    <text x="650" y="784" text-anchor="middle" class="sans" fill="#F5F5DC" font-size="19" font-weight="800">THE FORGOTTEN PATH</text>
+  </g>
+
+  <g filter="url(#cardShadow)">
+    <polygon points="840,656 870,604 930,604 960,656 930,708 870,708" fill="url(#darkCard)" stroke="#F5F5DC" stroke-width="4"/>
+    <text x="900" y="650" text-anchor="middle" class="hexlabel" fill="#F5F5DC">FEATURE |</text>
+    <text x="900" y="672" text-anchor="middle" class="hexlabel" fill="#F5F5DC">2024</text>
+  </g>
+  <g filter="url(#cardShadow)">
+    <polygon points="998,656 1028,604 1088,604 1118,656 1088,708 1028,708" fill="url(#darkCard)" stroke="#F5F5DC" stroke-width="4"/>
+    <text x="1058" y="650" text-anchor="middle" class="hexlabel" fill="#F5F5DC">FEATURE |</text>
+    <text x="1058" y="672" text-anchor="middle" class="hexlabel" fill="#F5F5DC">2024</text>
+  </g>
+  <g filter="url(#cardShadow)">
+    <polygon points="840,758 870,706 930,706 960,758 930,810 870,810" fill="url(#darkCard)" stroke="#F5F5DC" stroke-width="4"/>
+    <text x="900" y="752" text-anchor="middle" class="hexlabel" fill="#F5F5DC">FEATURE |</text>
+    <text x="900" y="774" text-anchor="middle" class="hexlabel" fill="#F5F5DC">2024</text>
+  </g>
+
+  <g filter="url(#cardShadow)">
+    <polygon points="530,862 560,810 620,810 650,862 620,914 560,914" fill="url(#darkCard)" stroke="#F5F5DC" stroke-width="4"/>
+    <text x="590" y="856" text-anchor="middle" class="hexlabel" fill="#F5F5DC">FEATURE |</text>
+    <text x="590" y="878" text-anchor="middle" class="hexlabel" fill="#F5F5DC">2024</text>
+  </g>
+  <g filter="url(#cardShadow)">
+    <polygon points="684,858 698.5,832 727.5,832 742,858 727.5,884 698.5,884" fill="url(#darkCard)" stroke="#F5F5DC" stroke-width="3"/>
+    <path d="M706 848c8 10 8 22 0 32M720 848c-8 10-8 22 0 32" stroke="#F5F5DC" stroke-opacity="0.7" fill="none"/>
+    <text x="713" y="863" text-anchor="middle" class="hextiny" fill="#F5F5DC">BAFTA</text>
+  </g>
+  <g filter="url(#cardShadow)">
+    <polygon points="844,858 858.5,832 887.5,832 902,858 887.5,884 858.5,884" fill="url(#darkCard)" stroke="#F5F5DC" stroke-width="3"/>
+    <path d="M866 848c8 10 8 22 0 32M880 848c-8 10-8 22 0 32" stroke="#F5F5DC" stroke-opacity="0.7" fill="none"/>
+    <text x="873" y="863" text-anchor="middle" class="hextiny" fill="#F5F5DC">BAFTA</text>
+  </g>
+
+  <!-- About -->
+  <rect x="0" y="980" width="1440" height="428" fill="#04110E"/>
+  <rect x="0" y="980" width="1440" height="428" fill="url(#grain)" opacity="0.20"/>
+  <text x="72" y="1058" class="label" fill="#FFD700">ABOUT / DIRECTOR &amp; CRAFT</text>
+  <text x="72" y="1112" class="display" fill="#F5F5DC" font-size="50">Cinema built from patience,</text>
+  <text x="72" y="1170" class="display" fill="#F5F5DC" font-size="50">texture, and intent.</text>
+  <rect x="72" y="1214" width="612" height="146" rx="12" fill="#0B3D30" stroke="#FFD700" stroke-opacity="0.50"/>
+  <path d="M102 1324 C164 1252 224 1230 310 1244 C378 1256 432 1238 492 1208 C552 1268 596 1274 684 1240 L684 1360 L72 1360 L72 1342z" fill="#071512"/>
+  <circle cx="520" cy="1266" r="46" fill="#FFD700" opacity="0.13"/>
+  <rect x="452" y="1238" width="120" height="70" rx="8" fill="#000000" stroke="#F5F5DC" stroke-opacity="0.26"/>
+  <circle cx="512" cy="1273" r="22" fill="none" stroke="#FFD700" stroke-width="7"/>
+  <circle cx="512" cy="1273" r="7" fill="#FFD700"/>
+  <text x="102" y="1342" class="small" fill="#F5F5DC" opacity="0.72">CANDID ON-SET IMAGE / FILM CAMERA / HIGH CONTRAST</text>
+
+  <rect x="724" y="1058" width="644" height="136" rx="12" fill="#0B3D30" fill-opacity="0.82" stroke="#FFD700" stroke-opacity="0.34"/>
+  <text x="756" y="1098" class="label" fill="#FFD700">PHILOSOPHY</text>
+  <text x="756" y="1134" class="body" fill="#F5F5DC">“The frame should feel inevitable — lit by motive,</text>
+  <text x="756" y="1162" class="body" fill="#F5F5DC">moved by character, and cut with emotional clarity.”</text>
+  <rect x="724" y="1220" width="302" height="140" rx="12" fill="#0B3D30" fill-opacity="0.46" stroke="#F5F5DC" stroke-opacity="0.18"/>
+  <text x="752" y="1262" class="label" fill="#FFD700">APPROACH</text>
+  <text x="752" y="1296" class="small" fill="#F5F5DC" opacity="0.82">Natural light discipline</text>
+  <text x="752" y="1322" class="small" fill="#F5F5DC" opacity="0.82">Actor-first blocking</text>
+  <text x="752" y="1348" class="small" fill="#F5F5DC" opacity="0.82">Textural color contrast</text>
+  <rect x="1050" y="1220" width="318" height="140" rx="12" fill="#0B3D30" fill-opacity="0.46" stroke="#F5F5DC" stroke-opacity="0.18"/>
+  <text x="1078" y="1262" class="label" fill="#FFD700">FOCUS</text>
+  <text x="1078" y="1296" class="small" fill="#F5F5DC" opacity="0.82">Short-form narrative</text>
+  <text x="1078" y="1322" class="small" fill="#F5F5DC" opacity="0.82">Music-driven branded film</text>
+  <text x="1078" y="1348" class="small" fill="#F5F5DC" opacity="0.82">Documentary portraiture</text>
+
+  <!-- Reviews -->
+  <text x="72" y="1490" class="label" fill="#FFD700">FILM REVIEWS / INSTAGRAM DISPATCH</text>
+  <text x="72" y="1542" class="display" fill="#F5F5DC" font-size="50">Curated stills, notes,</text>
+  <text x="72" y="1600" class="display" fill="#F5F5DC" font-size="50">and audience response.</text>
+  <text x="888" y="1536" class="small" fill="#F5F5DC" opacity="0.66">CACHED CUSTOM REACT FEED</text>
+  <text x="888" y="1564" class="small" fill="#F5F5DC" opacity="0.66">DIRECT INSTAGRAM LINKS</text>
+  <rect x="888" y="1594" width="194" height="42" rx="21" fill="none" stroke="#FFD700"/>
+  <text x="927" y="1621" class="small" fill="#FFD700" font-weight="800">@TERRELDELIGNY</text>
+
+  <g>
+    <rect x="72" y="1688" width="300" height="344" rx="12" fill="#1A2020" stroke="#FFD700" stroke-opacity="0.34"/>
+    <rect x="92" y="1708" width="260" height="142" rx="8" fill="url(#echoImg)"/>
+    <use href="#star" xlink:href="#star" x="96" y="1872" width="18" height="18" fill="#FFD700"/>
+    <use href="#star" xlink:href="#star" x="120" y="1872" width="18" height="18" fill="#FFD700"/>
+    <use href="#star" xlink:href="#star" x="144" y="1872" width="18" height="18" fill="#FFD700"/>
+    <use href="#star" xlink:href="#star" x="168" y="1872" width="18" height="18" fill="#FFD700"/>
+    <use href="#star" xlink:href="#star" x="192" y="1872" width="18" height="18" fill="#FFD700"/>
+    <text x="96" y="1920" class="sans" fill="#F5F5DC" font-size="18" font-weight="800">“Elegant, patient, haunting.”</text>
+    <text x="96" y="1952" class="small" fill="#F5F5DC" opacity="0.66">Festival review / Shorts program</text>
+    <text x="96" y="1992" class="small" fill="#FFD700">VIEW ON INSTAGRAM →</text>
+  </g>
+  <g>
+    <rect x="394" y="1688" width="300" height="344" rx="12" fill="#1A2020" stroke="#FFD700" stroke-opacity="0.34"/>
+    <rect x="414" y="1708" width="260" height="142" rx="8" fill="url(#shadowImg)"/>
+    <use href="#star" xlink:href="#star" x="418" y="1872" width="18" height="18" fill="#FFD700"/>
+    <use href="#star" xlink:href="#star" x="442" y="1872" width="18" height="18" fill="#FFD700"/>
+    <use href="#star" xlink:href="#star" x="466" y="1872" width="18" height="18" fill="#FFD700"/>
+    <use href="#star" xlink:href="#star" x="490" y="1872" width="18" height="18" fill="#FFD700"/>
+    <use href="#star" xlink:href="#star" x="514" y="1872" width="18" height="18" fill="#FFD700"/>
+    <text x="418" y="1920" class="sans" fill="#F5F5DC" font-size="18" font-weight="800">“Every frame has a pulse.”</text>
+    <text x="418" y="1952" class="small" fill="#F5F5DC" opacity="0.66">Audience note / Night Ferry</text>
+    <text x="418" y="1992" class="small" fill="#FFD700">VIEW ON INSTAGRAM →</text>
+  </g>
+  <g>
+    <rect x="716" y="1688" width="300" height="344" rx="12" fill="#1A2020" stroke="#FFD700" stroke-opacity="0.34"/>
+    <rect x="736" y="1708" width="260" height="142" rx="8" fill="url(#pathImg)"/>
+    <use href="#star" xlink:href="#star" x="740" y="1872" width="18" height="18" fill="#FFD700"/>
+    <use href="#star" xlink:href="#star" x="764" y="1872" width="18" height="18" fill="#FFD700"/>
+    <use href="#star" xlink:href="#star" x="788" y="1872" width="18" height="18" fill="#FFD700"/>
+    <use href="#star" xlink:href="#star" x="812" y="1872" width="18" height="18" fill="#FFD700"/>
+    <use href="#star" xlink:href="#star" x="836" y="1872" width="18" height="18" fill="#F5F5DC" opacity="0.35"/>
+    <text x="740" y="1920" class="sans" fill="#F5F5DC" font-size="18" font-weight="800">“Strong visual grammar.”</text>
+    <text x="740" y="1952" class="small" fill="#F5F5DC" opacity="0.66">Cinematography commentary</text>
+    <text x="740" y="1992" class="small" fill="#FFD700">VIEW ON INSTAGRAM →</text>
+  </g>
+  <g>
+    <rect x="1038" y="1688" width="300" height="344" rx="12" fill="#1A2020" stroke="#FFD700" stroke-opacity="0.34"/>
+    <rect x="1058" y="1708" width="260" height="142" rx="8" fill="url(#echoImg)"/>
+    <use href="#star" xlink:href="#star" x="1062" y="1872" width="18" height="18" fill="#FFD700"/>
+    <use href="#star" xlink:href="#star" x="1086" y="1872" width="18" height="18" fill="#FFD700"/>
+    <use href="#star" xlink:href="#star" x="1110" y="1872" width="18" height="18" fill="#FFD700"/>
+    <use href="#star" xlink:href="#star" x="1134" y="1872" width="18" height="18" fill="#FFD700"/>
+    <use href="#star" xlink:href="#star" x="1158" y="1872" width="18" height="18" fill="#FFD700"/>
+    <text x="1062" y="1920" class="sans" fill="#F5F5DC" font-size="18" font-weight="800">“Precise and cinematic.”</text>
+    <text x="1062" y="1952" class="small" fill="#F5F5DC" opacity="0.66">Creative director / Brand film</text>
+    <text x="1062" y="1992" class="small" fill="#FFD700">VIEW ON INSTAGRAM →</text>
+  </g>
+
+  <!-- Contact and sponsorship -->
+  <text x="72" y="2150" class="label" fill="#FFD700">CONTACT / COLLABORATION</text>
+  <text x="72" y="2204" class="display" fill="#F5F5DC" font-size="50">Book the next frame.</text>
+  <rect x="72" y="2250" width="608" height="344" rx="14" fill="#0B3D30" stroke="#FFD700" stroke-opacity="0.42"/>
+  <rect x="104" y="2290" width="252" height="48" rx="8" fill="#1A2020" stroke="#F5F5DC" stroke-opacity="0.16"/>
+  <rect x="380" y="2290" width="268" height="48" rx="8" fill="#1A2020" stroke="#F5F5DC" stroke-opacity="0.16"/>
+  <rect x="104" y="2362" width="544" height="48" rx="8" fill="#1A2020" stroke="#F5F5DC" stroke-opacity="0.16"/>
+  <rect x="104" y="2430" width="544" height="66" rx="8" fill="#1A2020" stroke="#FFD700" stroke-opacity="0.58"/>
+  <text x="126" y="2320" class="small" fill="#F5F5DC" opacity="0.58">NAME</text>
+  <text x="402" y="2320" class="small" fill="#F5F5DC" opacity="0.58">EMAIL</text>
+  <text x="126" y="2392" class="small" fill="#F5F5DC" opacity="0.58">PROJECT TYPE</text>
+  <text x="126" y="2466" class="small" fill="#F5F5DC" opacity="0.58">PROJECT DETAILS, DATE, LOCATION, AND SCOPE</text>
+  <rect x="424" y="2518" width="224" height="54" rx="27" fill="#FFD700"/>
+  <text x="474" y="2552" class="small" fill="#1A2020" font-weight="900">START INQUIRY</text>
+
+  <rect x="724" y="2142" width="644" height="452" rx="16" fill="#1A2020" stroke="#FFD700" stroke-width="2"/>
+  <rect x="748" y="2166" width="596" height="404" rx="12" fill="none" stroke="#F5F5DC" stroke-opacity="0.12"/>
+  <text x="780" y="2218" class="label" fill="#FFD700">SUPPORT / SPONSORSHIP</text>
+  <text x="780" y="2270" class="display" fill="#F5F5DC" font-size="46">Back the next slate.</text>
+  <text x="780" y="2312" class="body" fill="#F5F5DC" opacity="0.80">Production companies, gear brands, and patrons can</text>
+  <text x="780" y="2342" class="body" fill="#F5F5DC" opacity="0.80">underwrite films, equipment, and festival finishing.</text>
+  <rect x="780" y="2382" width="170" height="112" rx="10" fill="#000000" fill-opacity="0.30" stroke="#FFD700" stroke-opacity="0.44"/>
+  <text x="802" y="2418" class="label" fill="#FFD700">BACKER</text>
+  <text x="802" y="2452" class="small" fill="#F5F5DC" opacity="0.80">Project support</text>
+  <text x="802" y="2478" class="small" fill="#F5F5DC" opacity="0.56">Credit + updates</text>
+  <rect x="972" y="2382" width="170" height="112" rx="10" fill="#000000" fill-opacity="0.30" stroke="#FFD700" stroke-opacity="0.44"/>
+  <text x="994" y="2418" class="label" fill="#FFD700">GEAR</text>
+  <text x="994" y="2452" class="small" fill="#F5F5DC" opacity="0.80">Equipment sponsor</text>
+  <text x="994" y="2478" class="small" fill="#F5F5DC" opacity="0.56">Set visibility</text>
+  <rect x="1164" y="2382" width="170" height="112" rx="10" fill="#000000" fill-opacity="0.30" stroke="#FFD700" stroke-opacity="0.44"/>
+  <text x="1186" y="2418" class="label" fill="#FFD700">EXECUTIVE</text>
+  <text x="1186" y="2452" class="small" fill="#F5F5DC" opacity="0.80">Producer circle</text>
+  <text x="1186" y="2478" class="small" fill="#F5F5DC" opacity="0.56">Premiere access</text>
+  <rect x="780" y="2524" width="228" height="54" rx="27" fill="#FFD700"/>
+  <text x="820" y="2558" class="small" fill="#1A2020" font-weight="900">BECOME A SPONSOR</text>
+  <rect x="1030" y="2524" width="218" height="54" rx="27" fill="none" stroke="#FFD700" stroke-width="2"/>
+  <text x="1068" y="2558" class="small" fill="#FFD700" font-weight="800">DOWNLOAD DECK</text>
+
+  <!-- Footer -->
+  <rect x="0" y="2620" width="1440" height="100" fill="#1A2020"/>
+  <line x1="0" y1="2620" x2="1440" y2="2620" stroke="#FFD700" stroke-opacity="0.30"/>
+  <text x="72" y="2678" class="small" fill="#F5F5DC" opacity="0.72">© 2026 TERREL DELIGNY. ALL RIGHTS RESERVED.</text>
+  <text x="950" y="2678" class="small" fill="#F5F5DC" opacity="0.72">INSTAGRAM</text>
+  <text x="1068" y="2678" class="small" fill="#F5F5DC" opacity="0.72">VIMEO</text>
+  <text x="1152" y="2678" class="small" fill="#F5F5DC" opacity="0.72">EMAIL</text>
+  <rect x="1288" y="2648" width="80" height="38" rx="19" fill="none" stroke="#FFD700"/>
+  <text x="1310" y="2672" class="small" fill="#FFD700" font-weight="800">TOP</text>
+</svg>
