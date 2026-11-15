@@ -53,7 +53,11 @@ Derived from client specification (`TD Color Palette.pdf`). **Do not deviate fro
    - Displays video player, accolade banner, logline, synopsis, director's note, technical specs (`Camera`, `Lens`, `Format`, `Release`, `Location`), `Escape` key support, and Gold **Watch Full Film** CTA.
 4. **Fast Cached Instagram Reviews (`src/components/ReviewsSection.jsx`):**
    - Never use slow third-party live Instagram embed scripts. Keep reviews rendered from fast local/cached structured data (`INSTAGRAM_REVIEWS` in `src/data/portfolioData.js`) with star ratings, score badges, film filter pills, and outbound post links.
-5. **Sponsorship-to-Contact Flow (`SponsorshipSection.jsx` -> `ContactSection.jsx`):**
+5. **Films Archive — Horizontal 3×2 Paginated Scroll Grid (`src/components/FilmsSection.jsx`):**
+   - Located after AboutSection, before ReviewsSection. Displays `PAST_FILMS` in horizontal snap-scrolling pages; each viewport shows exactly **3 columns × 2 rows** (6 cards) of Gold-framed cover-art thumbnails.
+   - Navigation anchor is **`Films`** (`#films`) — it **replaces** the old `Projects` link in both `Navbar.jsx` and `Footer.jsx`.
+   - Clicking any card opens the **same** shared `VideoModal` as the Hero floating tiles. When a film object carries a `youtubeId`, the modal renders an embedded YouTube `<iframe>` player (autoplay, rel=0, modestbranding); otherwise it falls back to the native `<video>` preview. Modal always shows title, release date ("Made {releaseDate}"), description/synopsis, technical specs, and the Gold Watch Full Film CTA.
+6. **Sponsorship-to-Contact Flow (`SponsorshipSection.jsx` -> `ContactSection.jsx`):**
    - Clicking a sponsorship tier (`Project Backer`, `Gear Sponsor`, `Executive Producer Circle`) or **Become a Sponsor** sets `selectedSponsorTier` in `App.jsx` and scrolls smoothly to `#contact` with the selected tier highlighted inside the form.
 
 ---
@@ -66,6 +70,7 @@ Derived from client specification (`TD Color Palette.pdf`). **Do not deviate fro
 - `src/components/HeroSection.jsx` — Off-centered title, asymmetrical Gold-framed video tile mosaic, "Explore The Work" banner, and "Upcoming Work" slate cluster
 - `src/components/VideoModal.jsx` — Full-screen trailer & technical specifications modal
 - `src/components/AboutSection.jsx` — Candid on-set imagery, "About Terrel Deligny" split card, and "The Vision & The Way / About The Philosophy" Deep Forest Green cards
+- `src/components/FilmsSection.jsx` — "Films" horizontal 3×2 snap-scroll cover-art archive (replaces the `Projects` nav anchor with `Films` / `#films`)
 - `src/components/ReviewsSection.jsx` — "Critical Views" filterable cached Instagram review grid
 - `src/components/ContactSection.jsx` — "Connect With The Vision" Dark Slate & Gold inquiry form
 - `src/components/SponsorshipSection.jsx` — Support & Sponsorship banner, 3 contribution tiers, downloadable deck trigger, and partner ecosystem strip

@@ -54,18 +54,29 @@ export default function VideoModal({ film, onClose }) {
               </button>
             </div>
 
-            {/* Video Player Area */}
+            {/* Video Player Area — Embedded YouTube or Native HTML5 Preview */}
             <div className="relative aspect-video w-full bg-pitch overflow-hidden border-b border-gold/30">
-              <video
-                key={film.id}
-                src={film.previewVideo}
-                poster={film.poster}
-                controls
-                autoPlay
-                loop
-                playsInline
-                className="w-full h-full object-cover"
-              />
+              {film.youtubeId ? (
+                <iframe
+                  key={film.id}
+                  src={`https://www.youtube.com/embed/${film.youtubeId}?autoplay=1&rel=0&modestbranding=1`}
+                  title={`${film.title} — Official Trailer`}
+                  className="w-full h-full"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                />
+              ) : (
+                <video
+                  key={film.id}
+                  src={film.previewVideo}
+                  poster={film.poster}
+                  controls
+                  autoPlay
+                  loop
+                  playsInline
+                  className="w-full h-full object-cover"
+                />
+              )}
               <div className="pointer-events-none absolute top-4 left-4 px-3 py-1 rounded bg-pitch/75 border border-gold/40 text-[11px] font-mono uppercase tracking-[0.2em] text-gold flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-gold animate-pulse" />
                 Official Director’s Cut Preview
@@ -87,6 +98,15 @@ export default function VideoModal({ film, onClose }) {
                 >
                   {film.title}
                 </h3>
+
+                {film.releaseDate && (
+                  <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-[0.2em] text-cream/70">
+                    <Calendar className="w-4 h-4 text-gold" />
+                    <span>
+                      Made <span className="text-gold font-semibold">{film.releaseDate}</span>
+                    </span>
+                  </div>
+                )}
 
                 <p className="text-base sm:text-lg text-cream/90 font-medium leading-relaxed">
                   {film.logline}

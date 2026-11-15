@@ -3,6 +3,7 @@ import ClapperboardIntro from './components/ClapperboardIntro';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
+import FilmsSection from './components/FilmsSection';
 import ReviewsSection from './components/ReviewsSection';
 import ContactSection from './components/ContactSection';
 import SponsorshipSection from './components/SponsorshipSection';
@@ -48,6 +49,7 @@ export default function App() {
 
       <main className="flex-1">
         <HeroSection onSelectFilm={setActiveModalFilm} />
+        <FilmsSection onSelectFilm={setActiveModalFilm} />
         <AboutSection />
         <ReviewsSection />
         <ContactSection selectedTier={selectedSponsorTier} />

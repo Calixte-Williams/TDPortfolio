@@ -212,7 +212,7 @@ export default function ClapperboardIntro({ onComplete }) {
               fontFamily="Cormorant Garamond, Georgia, serif"
               letterSpacing="2"
             >
-              TERREL DELIGNY • PORTFOLIO REEL
+              PORTFOLIO
             </text>
 
             <text
@@ -223,7 +223,7 @@ export default function ClapperboardIntro({ onComplete }) {
               fontFamily="JetBrains Mono, monospace"
               letterSpacing="2"
             >
-              DIRECTOR / DOP
+              DIRECTOR
             </text>
             <text
               x="36"

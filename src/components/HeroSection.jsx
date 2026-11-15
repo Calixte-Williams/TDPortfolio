@@ -228,7 +228,7 @@ export default function HeroSection({ onSelectFilm }) {
             <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-forest/80 border border-gold/60 shadow-gold-glow">
               <Sparkles className="w-3.5 h-3.5 text-gold" />
               <span className="text-[11px] font-mono uppercase tracking-[0.24em] text-cream">
-                Directorial & Cinematography Reel
+                Directorial & Cinematography Portfolio
               </span>
             </div>
 
@@ -244,10 +244,10 @@ export default function HeroSection({ onSelectFilm }) {
             <div className="h-[2px] w-44 bg-gradient-to-r from-gold via-gold/60 to-transparent" />
 
             <p className="text-sm sm:text-base text-cream/80 leading-relaxed max-w-md">
-              Crafting high-contrast narrative features, nocturnal commercial cinema,
-              and human-led documentaries between{' '}
-              <span className="text-gold font-semibold">London</span> and{' '}
-              <span className="text-gold font-semibold">Tokyo</span>.
+              Visualizing stories with deeper meanings to bring topics to light that 
+              are overlooked while experimenting with different genres like {' '}
+              <span className="text-gold font-semibold">Horror</span> and{' '}
+              <span className="text-gold font-semibold">Comedy</span>.
             </p>
 
             {/* Interactive Controls */}

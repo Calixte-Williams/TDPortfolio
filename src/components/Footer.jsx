@@ -26,8 +26,8 @@ export default function Footer() {
 
         {/* Anchor Navigation */}
         <div className="flex flex-wrap items-center justify-center gap-6 text-xs font-mono uppercase tracking-[0.22em]">
-          <a href="#projects" className="text-cream/80 hover:text-gold transition-colors">
-            Projects
+          <a href="#films" className="text-cream/80 hover:text-gold transition-colors">
+            Films
           </a>
           <a href="#about" className="text-cream/80 hover:text-gold transition-colors">
             About
